@@ -1,10 +1,7 @@
 var request = require('request');
 var imgSearch = require('../models/imgSearch.js');
 
-var APIKEY = 'AIzaSyB5gu-FcjAxvDy-lfUKiREEWNVpwiuF3eA'
-var cx = '008924517014194673499%3Atkjerk2whko'
 var requestUrl = "https://www.googleapis.com/customsearch/v1?key="+ process.env.API_KEY +"&cx="+ process.env.API_CX +"&searchType=image&num=10&q=";
-
 
 exports.create_query_get = function(req, res, next){
  var query = req.params.query;
