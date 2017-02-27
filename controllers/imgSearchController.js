@@ -9,6 +9,9 @@ var requestUrl = "https://www.googleapis.com/customsearch/v1?key="+ APIKEY +"&cx
 exports.create_query_get = function(req, res, next){
  var query = req.params.query;
  var url = requestUrl + query;
+ if(req.query.offset){
+   url += '?' + req.query.offset;
+ }
  findInDatabase(query).then(function(results){
    if(!results){
      makeVendorApiRequest(url).then(function(results){
