@@ -1,0 +1,25 @@
+{
+  "name": "image-search-abstraction-layer",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "mongoose": "^4.8.5",
+    "morgan": "~1.7.0",
+    "pug": "^2.0.0-beta11",
+    "request": "^2.79.0",
+    "serve-favicon": "~2.3.2"
+  },
+  "description": "4th fcc api project",
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "steve barton",
+  "license": "ISC"
+}
